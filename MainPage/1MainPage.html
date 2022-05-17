@@ -1,0 +1,342 @@
+<!Doctype html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Nautigal&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+<head>
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+    <style>
+        .loader {
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+        }
+        
+        .loader.hidden {
+            animation: fadeout 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes fadeout {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        * {
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo img {
+            height: 7vh;
+            margin: 1vh 1vw;
+        }
+        
+        .header {
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ChitkaraFront.jpg);
+            background-size: cover;
+            width: 100%;
+            background-position: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .header nav ul li {
+            display: inline;
+        }
+        
+        .header nav ul li a {
+            position: relative;
+            top: 2vh;
+            right: 2vw;
+            padding: 1vh;
+            font-size: 3vh;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .header nav ul li a:hover {
+            border-width: 0 0 2px 0;
+            border-style: solid;
+            border-color: red;
+        }
+        
+        .header nav ul {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .textbox {
+            min-height: 9vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        
+        .textbox h1 {
+            font-size: 40px;
+        }
+        
+        .textbox .button {
+            color: white;
+            display: inline-block;
+            border: 1px solid white;
+            padding: 2vh 2vw;
+        }
+        
+        .textbox .button:hover {
+            background-color: #f44336;
+            transition: 1s;
+        }
+        
+        .header2 {
+            text-align: center;
+            font-size: 7vh;
+            font-weight: 500;
+        }
+        
+        .header3 {
+            text-align: center;
+            font-size: 5vh;
+            font-weight: 400px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .container .box1,
+        .container .box2,
+        .container .box3 {
+            border-radius: 10px;
+            display: inline-block;
+            width: 25vw;
+            height: 30vh;
+        }
+        
+        .container .box1:hover,
+        .container .box2:hover,
+        .container .box3:hover {
+            box-shadow: 7px 7px 7px 7px grey;
+        }
+        /* 
+        .container .box1 img {
+            position: absolute;
+            width: 25vw;
+            height: 30vh;
+        } */
+        /* .layer {
+            position:relative;
+            background-color: red;
+            width:100%;
+            height:100%;
+            opacity:0;
+        }
+        .layer:hover {
+            opacity:1;
+        }
+
+        .layer h2 {
+            position:relative;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background-color:black;
+        }
+
+        .layer h2 {
+            font-size: 40px;
+            color: white;
+        } */
+        
+        .box1 h2,
+        .box1 h1,
+        .box2 h1,
+        .box3 h1 {
+            opacity: 0;
+        }
+        
+        .contact {
+            border-radius: 10px;
+            background-image: url(Contct.jpg);
+            background-size: cover;
+            width: 95vw;
+            height: 40vh;
+            margin: 10vh auto;
+            background-position: top;
+        }
+        
+        .contact a .buttoncontact {
+            position: relative;
+            color: white;
+            top: 50%;
+            left: 35%;
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 8vw;
+            display: inline-block;
+        }
+        
+        a {
+            text-align: center;
+            margin: auto;
+            padding: 40px;
+            text-decoration: none;
+        }
+        
+        .contact a .buttoncontact:hover {
+            background-color: #f44336;
+        }
+    </style>
+    <title>Carte</title>
+</head>
+
+<body background-image="https://img.lovepik.com/photo/50074/0873.jpg_wh300.jpg">
+    <div class="loader">
+        <img src="G:\My Drive\Photos\Loader\giphy.gif">
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        })
+    </script>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="G:\My Drive\Photos\Loader\culogo.png">
+            </div>
+            <ul>
+                <li><a href="G:\My Drive\Project\Codes\My_Website\MainPage\1MainPage.html">Home</a></li>
+                <li><a href="G:\My Drive\Project\Codes\My_Website\VirtualTour\VirtualTour.html">Tour</a></li>
+                <li><a href="G:\My Drive\Project\Codes\My_Website\About Us\about us .html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="textbox">
+            <h1>Welcome To Chitkara University</h1>
+            <br>
+            <a href="G:\My Drive\Project\Codes\My_Website\VirtualTour\VirtualTour.html">
+                <div class="button">
+                    Virtual Tour
+                </div>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="header2">
+        Our Global Campus
+    </div>
+    <br>
+    <br>
+    <div class="header3">
+        Geeks Paradise
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <a href="G:\My Drive\Project\Codes\My_Website\Blocks\BlockMainPage.html">
+            <div class="box1" style="background-image:url(Blocks.jpg); background-size:25vw 30vh; background-position:center;">
+                <div class="layer">
+                    <h2>Class</h2>
+                </div>
+            </div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\Library\LIbrary.html">
+            <div class="box2" style="background-image:url(Library.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\labs\labs.html">
+            <div class="box3" style="background-image:url(Research.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="header3">
+        Carpe Diem
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <a href="G:\My Drive\Project\Codes\My_Website\sportorium\sportorium.html">
+            <div class="box1" style="background-image:url(Sportstorium.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+
+            </div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\Food court\food.html">
+            <div class="box2" style="background-image:url(FoodCourt.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\Hostels\hostel.html">
+            <div class="box3" style="background-image:url(Hostels.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="header3">
+        Our Facilites
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <a href="G:\My Drive\Project\Codes\My_Website\explore hub\explorehub.html">
+            <div class="box1" style="background-image:url(Exploretoriam.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\explore stars\explore stars.html">
+            <div class="box2" style="background-image:url(Explore\ Star.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+        <a href="file:///G:/My%20Drive/Project/Codes/My_Website/Blocks/Babbage/Babbage.html">
+            <div class="box3" style="background-image:url(Administrative.jpg); background-size:25vw 30vh; background-position:center;">
+                <h1>abc</h1>
+            </div>
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="contact">
+        <a href="G:\My Drive\Project\Codes\My_Website\contact us\contactus.html">
+            <div class="buttoncontact">
+                Contact Us</div>
+        </a>
+        <a href="G:\My Drive\Project\Codes\My_Website\Review\review.html">
+            <div class="buttoncontact">Review</div>
+        </a>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

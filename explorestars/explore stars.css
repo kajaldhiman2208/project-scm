@@ -1,0 +1,170 @@
+header {
+    text-align: end;
+   
+   
+}
+
+header nav ul li {
+    top: 3vh;
+    display: inline;
+    position: relative;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding: 1vw;
+    font-size: 3vh;
+}
+
+header nav ul li a:hover {
+    border-radius: 10px;
+    border: solid gray;
+    border-width: 2px 0px 2px 0px;
+}
+.size{
+    
+    height:500px;
+    background-image: url();
+    width:70%;
+    margin-left:200px;
+    align-items: center;
+}
+
+.images{
+    display:flex;
+    height:800px;
+    width:70%;
+    margin-left:230px;
+    flex-wrap:wrap;
+    
+}
+.one{
+    height:45%;
+    width:46%;
+    background-image:url(bhangra.jpg);
+    background-size:cover;
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:10px;
+    margin-bottom:8px;
+
+}
+.two{
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-bottom:8px;
+        height:45%;
+        width:46%;
+        background-image:url(gidha.jpg);
+        background-size:cover;
+    
+
+}
+.three{
+    height:45%;
+    width:46%;
+    background-image:url(kathak2.jpg);
+    background-size:cover;
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-bottom:8px;
+}
+.four{
+    height:45%;
+        width:46%;
+        background-image:url(singing\ 2.jpg);
+        background-size:cover;
+        margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-bottom:8px;
+}
+.main{
+    display:flex;
+    height:400px;
+    width:70%;
+   
+    margin-left:230px;
+    position: relative;
+    text-align: center;
+    background-color:#CCC3B6;
+}
+.m1{
+    height:80%;
+    width:60%;
+    background-image:url(file:///G:/My%20Drive/Project/Codes/My_Website/explore%20hub/explorehub6.JPG);
+    background-size:cover;
+    margin-left:50px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.m2{
+    height:50%;
+    width:50%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%); 
+  
+    
+    color:black;
+    background-color:#E7E6DC;
+}
+.mm{
+    display:flex;
+    height:400px;
+    width:70%;
+    
+    
+    margin-left:230px;
+    position: relative;
+    text-align: center;
+    background-color:#CCC3B6;
+  
+    
+    
+}
+.mm1{
+    height:100%;
+    width:40%;
+
+
+ 
+  
+
+}
+.mm2{
+   
+    height:50%;
+    width:50%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%); 
+ background-color:#E7E6DC;
+ 
+ color:BLACK;
+ 
+
+
+}
+.p{
+    margin-top:85px;
+}
+
+.mm3{
+    height:80%;
+    width:60%;
+
+    background-image:url(file:///G:/My%20Drive/Project/Codes/My_Website/explore%20hub/explorehub4.JPG);
+    background-size:cover;
+   margin-right:50px;
+   margin-top:50px;
+   margin-bottom:50px;
+    
+  
+}

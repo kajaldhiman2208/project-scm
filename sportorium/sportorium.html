@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportorium</title>
+    <link rel="stylesheet" href="sportorium.css">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=The+Nautigal&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+</head>
+
+<body>
+    <h1 class="h1">SPORTORIUM</h1>
+    <!--image slider-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+            <input type="radio" name="radio-btn" id="radio9">
+            <input type="radio" name="radio-btn" id="radio10">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="badminton court.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="volley ball court.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="basket ball court.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="carom board 2.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="foot ball court.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="full veiw.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="gym1.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="gym2.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="gym3.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="snooker 2.JPG" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+                <div class="auto-btn10"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+            <label for="radio9" class="manual-btn"></label>
+            <label for="radio10" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <script>
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 10) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</body>
+
+</html>
